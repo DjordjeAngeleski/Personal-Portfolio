@@ -107,6 +107,10 @@ header > .gore{
     font-family: TekstFont;
     font-size: 24px;
 }
+.about_me > #o_meni > h2{
+    position: absolute;
+    top: -40px;
+}
 .about_me > #moja_slika img{
     border-radius: 25px;
 }
@@ -157,4 +161,57 @@ header > .gore{
     font-size: 24px;
     font-family: TekstFont;
     padding: 10px;
+}
+
+
+.projects{
+    position: absolute;
+    left: 480px;
+    top: 1300px;
+}
+
+.projects > #naslovprojects{
+    position: absolute;
+    width: 800px;
+    height: 50px;
+    top: -50px;
+
+}
+
+.projects > #naslovprojects > p{
+    position: relative;
+    font-family: Sekcije;
+    color: white;
+    text-shadow: 3px 3px 3px rgb(149, 149, 149);
+    font-size: 55px; 
+    user-select: none;
+    transform: translate(0,-62px);
+}
+
+.projects > #naslovprojects > p::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    box-shadow: 3px 3px 3px rgb(149, 149, 149);
+    border-radius: 10px;
+}
+
+.projects > .lista_projekata > ul {
+    color:white;
+    font-size: 24px;
+    list-style: circle;
+}
+.projects > .lista_projekata > ul > li {
+    color:black;
+    font-size: 24px;
+    font-family: TekstFont;
+    padding: 10px;
+}
+
+.projects .lista_projekata > ul > li > a{
+    color: blue;
 }
