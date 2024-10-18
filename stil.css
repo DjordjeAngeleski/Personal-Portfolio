@@ -1,0 +1,160 @@
+@font-face {
+    font-family: Naslov;
+    src: url(assets/LondrinaSketch-Regular.ttf);
+}
+
+@font-face {
+    font-family: Sekcije;
+    src: url(assets/Agdasima-Regular.ttf);
+}
+@font-face {
+    font-family: TekstFont;
+    src: url(assets/Quicksand-VariableFont_wght.ttf);
+}
+
+@keyframes naslovAnimacija{
+    0% {color: black;rotate: 0deg;}
+    25% {color: red;rotate: 90deg;}
+    50% {color: greenyellow;rotate: 180deg;}
+    75% {color: purple;rotate:270deg;}
+    100% {color: black;rotate: 360deg;}
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(219, 208, 208);
+}
+
+header{
+    user-select: none;
+}
+
+header > #naslov{
+    position: fixed;
+    max-width: 100%;
+    top: 30px;
+    left: 70px;
+
+    
+}
+header > #naslov h1{
+    height: 50px;
+    font-size: 100px;
+    font-family: Naslov;
+    cursor: default;
+    margin-top: -20px;
+    margin-bottom: 50px;
+    
+}
+header > #naslov:hover{
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-name: naslovAnimacija;
+
+}
+
+
+header > .gore{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+}
+
+.pis{
+    font-family: Sekcije;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    width: 150px;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 3px rgb(149, 149, 149);
+}
+
+.pis:nth-child(2){
+    right: 220px;
+}
+
+.pis > p{
+    font-size: 55px;
+    text-align: center;
+    margin-top: -10px;
+}
+
+.pis > p:hover{
+    font-size: 56px;
+    cursor: pointer;
+}
+.pis > p > a:link, a:visited, a:hover, a:active{
+    text-decoration: none;
+    color: white;
+}
+
+.about_me{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    left: 480px;
+    top: 210px;
+    gap: 50px;
+    max-width: 800px;
+    
+}
+.about_me > #o_meni{
+    text-align: justify;
+    font-family: TekstFont;
+    font-size: 24px;
+}
+.about_me > #moja_slika img{
+    border-radius: 25px;
+}
+
+.skills{
+    position: absolute;
+    left: 480px;
+    top: 680px;
+}
+
+.skills > #naslovskills{
+    position: absolute;
+    width: 800px;
+    height: 50px;
+    top: -50px;
+
+}
+
+.skills > #naslovskills > p{
+    position: relative;
+    font-family: Sekcije;
+    color: white;
+    text-shadow: 3px 3px 3px rgb(149, 149, 149);
+    font-size: 55px; 
+    user-select: none;
+    transform: translate(0,-62px);
+}
+
+.skills > #naslovskills > p::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    box-shadow: 3px 3px 3px rgb(149, 149, 149);
+    border-radius: 10px;
+}
+
+.skills > .lista_skillova > ul {
+    color:white;
+    font-size: 24px;
+    list-style: circle;
+}
+.skills > .lista_skillova > ul > li {
+    color:black;
+    font-size: 24px;
+    font-family: TekstFont;
+    padding: 10px;
+}
